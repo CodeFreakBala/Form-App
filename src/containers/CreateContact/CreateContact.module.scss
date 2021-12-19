@@ -1,0 +1,39 @@
+.multi_step_form{
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s;
+    .form_step_one,.form_step_two{
+        flex-shrink: 0;
+        flex-basis: 100%;
+        transition: 0.5s;
+    }
+    .form_step_two{
+       visibility: hidden;
+       height: 0;
+    }
+    .form_step_two_visible{
+        visibility: visible;
+        height: auto !important;
+    }
+   .slided{
+       transform: translateX(-100%);
+   }
+}
+
+.back_icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.inline_input_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    input{
+        flex-basis: 31.33%;
+        flex-shrink: 0;
+        margin: 0.2rem;
+    }
+}
