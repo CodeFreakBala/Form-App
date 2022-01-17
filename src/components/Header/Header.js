@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Header.module.scss'
 import {
   BrowserRouter as Router,
-  Link
+  NavLink
 } from "react-router-dom";
 
 function Header() {
@@ -13,13 +13,10 @@ function Header() {
           <div className="row">
               <ul>
                 <li>
-                  <Link to="/">Create</Link>
+                <NavLink activeclassname="active" to="/">Create</NavLink>
                 </li>
                 <li>
-                  <Link to="/list">List</Link>
-                </li>
-                <li>
-                  <Link to="/edit">Edit</Link>
+                <NavLink activeclassname="active" to="/list">List</NavLink>
                 </li>
               </ul>
           </div>
